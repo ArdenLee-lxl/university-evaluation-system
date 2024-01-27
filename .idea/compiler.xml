@@ -10,5 +10,16 @@
         <module name="university-evaluation-system" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo1" target="17" />
+      <module name="demo2" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo1" options="-parameters" />
+      <module name="demo2" options="-parameters" />
+      <module name="university-evaluation-system" options="" />
+    </option>
   </component>
 </project>
