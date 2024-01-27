@@ -10,14 +10,16 @@
     <packaging>pom</packaging>
     <modules>
         <module>ues-pojo</module>
+        <module>ues-common</module>
+        <module>student-service</module>
     </modules>
 
-    <!--    <parent>-->
-<!--        <groupId>org.springframework.boot</groupId>-->
-<!--        <artifactId>spring-boot-starter-parent</artifactId>-->
-<!--        <version>3.2.1</version>-->
-<!--        <relativePath/>-->
-<!--    </parent>-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.1</version>
+        <relativePath/>
+    </parent>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -59,8 +61,21 @@
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>3.5.5</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>3.2.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-api</artifactId>
+                <version>0.12.3</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
