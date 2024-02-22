@@ -9,7 +9,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ues-pojo" />
-        <module name="student-service" />
         <module name="ues-common" />
       </profile>
     </annotationProcessing>
@@ -22,9 +21,6 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo1" options="-parameters" />
       <module name="demo2" options="-parameters" />
-      <module name="student-service" options="-parameters" />
-      <module name="ues-common" options="-parameters" />
-      <module name="ues-pojo" options="-parameters" />
       <module name="university-evaluation-system" options="" />
     </option>
   </component>
