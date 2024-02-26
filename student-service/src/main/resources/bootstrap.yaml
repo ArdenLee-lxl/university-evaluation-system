@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: student-server
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${ues.server-addr}
+        username: ${ues.username}
+        password: ${ues.password}
+server:
+  port: 8081

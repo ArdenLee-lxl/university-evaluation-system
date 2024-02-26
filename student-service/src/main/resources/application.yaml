@@ -1,0 +1,7 @@
+Spring:
+  profiles:
+    active: dev
+  datasource:
+    url: ${ues.datasource.url}
+    username: ${ues.datasource.username}
+    password: ${ues.datasource.password}
